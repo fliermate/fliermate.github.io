@@ -23,12 +23,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
     <a href="#unicode" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Unicode Converter</a>
+    <a href="#hexdump" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hexdump</a>    
     <a href="#bggp5" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BGGP 2024</a>
+    
+
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="#unicode" class="w3-bar-item w3-button w3-padding-large">Unicode Converter</a>
+    <a href="#hexdump" class="w3-bar-item w3-button w3-padding-large">Hexdump</a>
     <a href="#bggp5" class="w3-bar-item w3-button w3-padding-large">BGGP 2024</a>
   </div>
 </div>
@@ -58,6 +62,69 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <i class="fa fa-code w3-padding-64 w3-text-green"></i>
     </div>
   </div>
+</div>
+
+
+<a name="hexdump"></a>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <!-- Grid for pricing tables -->
+    <div class="w3-content">
+      <h1>Hexdump</h1>
+      <h5 class="w3-padding-32">Your one-stop hexdump solution for Windows, Linux and DOS.</h5>
+
+      <p class="w3-text-grey">Side-by-side comparison API calls used. Compile with FASM, since FASM is a cross-assembler, you can compile for Linux / Windows / DOS on any operating system.</p>
+
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Linux</li>
+          <li class="w3-padding-16">Call stack</li>
+          <li class="w3-padding-16">syscall 2</li>
+          <li class="w3-padding-16">syscall 0</li>
+          <li class="w3-padding-16">syscall 1</li>
+          <li class="w3-padding-16">syscall 3</li>
+          <li class="w3-padding-16">syscall 60</li>
+                    <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/fliermate/fliermate.github.io/tree/main/files/hexdump/hexdump.asm"><button class="w3-button w3-white w3-padding-large w3-hover-black">Open Source Code</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Windows</li>
+          <li class="w3-padding-16">GetCommandLineA</li>
+          <li class="w3-padding-16">CreateFileA</li>
+          <li class="w3-padding-16">ReadFile</li>
+          <li class="w3-padding-16">WriteFile</li>
+          <li class="w3-padding-16">CloseHandle</li>
+          <li class="w3-padding-16">ExitProcess</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/fliermate/fliermate.github.io/tree/main/files/hexdump/HEXDUMPW.asm"><button class="w3-button w3-white w3-padding-large w3-hover-black">Open Source Code</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">DOS</li>
+          <li class="w3-padding-16">Program Segment Prefix</li>
+          <li class="w3-padding-16">DOS Interrupt AH=3dh</li>
+          <li class="w3-padding-16">DOS Interrupt AH=3fh</li>
+          <li class="w3-padding-16">DOS Interrupt AH=2 & AH=9</li>
+          <li class="w3-padding-16">DOS Interrupt AH=3eh</li>
+          <li class="w3-padding-16">DOS Interrupt AH=4ch
+</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/fliermate/fliermate.github.io/tree/main/files/hexdump/HEXDUMPD.ASM"><button class="w3-button w3-white w3-padding-large w3-hover-black">Open Source Code</button></a>
+          </li>
+        </ul>
+      </div>
+
+    <!-- End Grid -->
+    </div>
+   </div>
 </div>
 
 <!-- Second Grid -->
